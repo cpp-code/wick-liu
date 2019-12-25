@@ -3,7 +3,7 @@ all: regular_expression
 regular_expression: regular_expression.o
 	g++ -o $@ $^ -Wall -Werror
 
-check:
+check:regular_expression
 	./$<
 	@echo Done
 
