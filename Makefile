@@ -1,10 +1,12 @@
-all: regular_expression
+all: regular_expression variable_arguments
 
-regular_expression: regular_expression.o
+regular_expression: regular_expression.o 
 	g++ -o $@ $^ -Wall -Werror
 
-check:regular_expression
-	./$<
+variable_arguments: variable_arguments.o
+	g++ -o $@ $^ -Wall -Werror
+	
+check:
 	@echo Done
 
 distcheck:
