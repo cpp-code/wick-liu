@@ -16,6 +16,7 @@ int add(const int num, ...)
     va_end(arg);
     return sum;
 }
+
 int main()
 {
     printf("sum: %d\n", add(3, 11, 22, 33));
